@@ -2,7 +2,7 @@ use dialoguer::Select;
 
 mod days;
 
-fn main() {    
+fn main() {  
     let items: Vec<(&str, fn() -> Result<_, std::io::Error>)> = vec![
         ("Day 1 - Star 1", days::day_01::star_one),
         ("Day 1 - Star 2", days::day_01::star_two),
@@ -10,6 +10,8 @@ fn main() {
         ("Day 2 - Star 2", days::day_02::star_two),
         ("Day 3 - Star 1", days::day_03::star_one),
         ("Day 3 - Star 2", days::day_03::star_two),
+        ("Day 4 - Star 1", days::day_04::star_one),
+        ("Day 4 - Star 2", days::day_04::star_two),
     ];
 
     let selection = Select::new()
